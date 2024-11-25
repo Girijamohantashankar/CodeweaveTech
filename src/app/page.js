@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "../../style/Home.css";
+import ContactUs from "./ContactUs/page"
 
 export default function Home() {
   return (
@@ -314,6 +315,210 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/*  Contact Us Section */}
+      <ContactUs />
+
+
+      {/* Our Technology Stack */}
+
+      {/* <section class="tech-stack">
+        <div class="tech-content">
+          <h2 class="tech-title">Our Technology Stack</h2>
+          <p class="tech-description">
+            We utilize the latest and most reliable technologies to provide exceptional services.
+          </p>
+          <div class="tech-tools">
+            <div class="tool-item">
+              <img src="path_to_icon/nextjs-icon.png" alt="Next.js" class="tool-icon" />
+              <h3>Next.js</h3>
+              <p>Next.js is a powerful React framework that enables fast, scalable, and optimized web applications.</p>
+            </div>
+            <div class="tool-item">
+              <img src="path_to_icon/nodejs-icon.png" alt="Node.js" class="tool-icon" />
+              <h3>Node.js</h3>
+              <p>Node.js allows us to build scalable backend services using JavaScript for faster and efficient development.</p>
+            </div>
+            <div class="tool-item">
+              <img src="path_to_icon/react-icon.png" alt="React" class="tool-icon" />
+              <h3>React</h3>
+              <p>React is a JavaScript library for building interactive user interfaces, making development faster and more efficient.</p>
+            </div>
+            <div class="tool-item">
+              <img src="path_to_icon/aws-icon.png" alt="AWS" class="tool-icon" />
+              <h3>AWS</h3>
+              <p>Amazon Web Services (AWS) provide cloud infrastructure to host, manage, and scale applications with ease.</p>
+            </div>
+            <div class="tool-item">
+              <img src="path_to_icon/docker-icon.png" alt="Docker" class="tool-icon" />
+              <h3>Docker</h3>
+              <p>Docker simplifies the development and deployment of applications by using containerization for portability.</p>
+            </div>
+            <div class="tool-item">
+              <img src="path_to_icon/graphql-icon.png" alt="GraphQL" class="tool-icon" />
+              <h3>GraphQL</h3>
+              <p>GraphQL is a query language for APIs, allowing us to fetch exactly the data we need in a single request.</p>
+            </div>
+          </div>
+        </div>
+      </section> */}
+      <section className="tech-stack">
+        <h2 className="tech-title">Our Technology Stack</h2>
+        <p className="tech-description">
+          We utilize the latest and most reliable technologies to provide exceptional services.
+        </p>
+        <div className="container_tech">
+          <div className="card-left">
+            <div className="card-image">
+              <img src="https://images.pexels.com/photos/220072/pexels-photo-220072.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Image 1" />
+            </div>
+            <div className="card-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <div className="card-top">
+            <div className="card-image">
+              <img src="https://images.pexels.com/photos/370799/pexels-photo-370799.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Image 2" />
+            </div>
+            <div className="card-text">
+              <p>Quisque cursus, metus vitae pharetra auctor.</p>
+            </div>
+          </div>
+
+          <div className="card-right">
+            <div className="card-image">
+              <img src="https://images.pexels.com/photos/35828/soap-bubble-colorful-ball-soapy-water.jpg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Image 3" />
+            </div>
+            <div className="card-text">
+              <p>Ut eu diam at pede suscipit sodales.</p>
+            </div>
+          </div>
+
+          <div className="card-right">
+            <div className="card-image">
+              <img src="https://images.pexels.com/photos/701855/pexels-photo-701855.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Image 4" />
+            </div>
+            <div className="card-text">
+              <p>Donec lacus nunc, viverra nec, blandit vel, egestas et, augue.</p>
+            </div>
+          </div>
+
+          <div className="card-top">
+            <div className="card-image">
+              <img src="https://images.pexels.com/photos/668295/pexels-photo-668295.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Image 5" />
+            </div>
+            <div className="card-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <div className="card-bottom">
+            <div className="card-image">
+              <img src="https://images.pexels.com/photos/63238/pexels-photo-63238.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Image 6" />
+            </div>
+            <div className="card-text">
+              <p>Ut eu diam at pede suscipit sodales.</p>
+            </div>
+          </div>
+
+          <div className="card-left">
+            <div className="card-image">
+              <img src="https://images.pexels.com/photos/1603891/pexels-photo-1603891.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Image 7" />
+            </div>
+            <div className="card-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <div className="card-bottom">
+            <div className="card-image">
+              <img src="https://images.pexels.com/photos/585581/pexels-photo-585581.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Image 8" />
+            </div>
+            <div className="card-text">
+              <p>Quisque cursus, metus vitae pharetra auctor.</p>
+            </div>
+          </div>
+
+          <div className="card-right">
+            <div className="card-image">
+              <img src="https://images.pexels.com/photos/532561/pexels-photo-532561.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Image 9" />
+            </div>
+            <div className="card-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <div className="card-top">
+            <div className="card-image">
+              <img src="https://images.pexels.com/photos/279376/pexels-photo-279376.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Image 10" />
+            </div>
+            <div className="card-text">
+              <p>Integer lacinia sollicitudin massa. Cras metus.</p>
+            </div>
+          </div>
+
+          <div className="card-left">
+            <div className="card-image">
+              <img src="https://images.pexels.com/photos/701855/pexels-photo-701855.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Image 11" />
+            </div>
+            <div className="card-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <div className="card-left">
+            <div className="card-image">
+              <img src="https://images.pexels.com/photos/262577/pexels-photo-262577.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Image 12" />
+            </div>
+            <div className="card-text">
+              <p>Ut eu diam at pede suscipit sodales.</p>
+            </div>
+          </div>
+
+          <div className="card-top">
+            <div className="card-image">
+              <img src="https://images.pexels.com/photos/978342/pexels-photo-978342.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Image 13" />
+            </div>
+            <div className="card-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <div className="card-bottom">
+            <div className="card-image">
+              <img src="https://images.pexels.com/photos/305831/pexels-photo-305831.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Image 14" />
+            </div>
+            <div className="card-text">
+              <p>Quisque cursus, metus vitae pharetra auctor.</p>
+            </div>
+          </div>
+
+          <div className="card-top">
+            <div className="card-image">
+              <img src="https://images.pexels.com/photos/355728/pexels-photo-355728.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Image 15" />
+            </div>
+            <div className="card-text">
+              <p>Donec lacus nunc, viverra nec, blandit vel, egestas et, augue.</p>
+            </div>
+          </div>
+
+          <div className="card-right">
+            <div className="card-image">
+              <img src="https://images.pexels.com/photos/775907/pexels-photo-775907.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Image 16" />
+            </div>
+            <div className="card-text">
+              <p>Ut eu diam at pede suscipit sodales.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
     </>
   );
 }
