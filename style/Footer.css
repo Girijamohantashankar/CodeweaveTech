@@ -1,0 +1,129 @@
+/* Global Footer Styles */
+.footer {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: left;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  .footer-about {
+    flex: 1;
+  }
+  
+  .footer-logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-description {
+    color: #bbb;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+  }
+  
+  /* Quick Links Section */
+  .footer-links h4 {
+    font-size: 1.2rem;
+    color: #00bcd4;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Contact Information Section */
+  .footer-contact h4 {
+    font-size: 1.2rem;
+    color: #00bcd4;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-contact p {
+    color: #bbb;
+    font-size: 1rem;
+  }
+  
+  .footer-contact a {
+    color: #00bcd4;
+    text-decoration: none;
+  }
+  
+  /* Social Media Section */
+  .footer-social h4 {
+    font-size: 1.2rem;
+    color: #00bcd4;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #bbb;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .footer-about,
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+      text-align: center;
+    }
+    
+    .footer-bottom {
+      margin-top: 1.5rem;
+    }
+  }
+  
