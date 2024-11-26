@@ -796,12 +796,13 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  padding: 64px;
+  /* padding: 64px; */
 }
 
 .pricing-card {
   position: relative;
-  min-width: 360px;
+  width: 360px;
+  margin-top: 20px;
   padding: 32px;
   padding-bottom: 96px;
   border-radius: 20px;
@@ -810,7 +811,13 @@
   box-shadow: 0 0 32px transparent;
   text-align: center;
 }
-
+@media(max-width: 768px){
+  .pricing-card{
+    width: 325px;
+  }.container_tech{
+    padding: 0 15px;
+  }
+}
 .pricing-card.basic {
   border-color: #0891b2;
   color: #0891b2;
