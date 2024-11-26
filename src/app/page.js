@@ -1,17 +1,13 @@
-"use client"
-import { useState } from "react";
+
 import Image from "next/image";
 import "../../style/Home.css";
 import ContactUs from "./ContactUs/page";
 import Link from "next/link";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import FAQ from './FAQ/page'
 
 export default function Home() {
-  const [openFAQ, setOpenFAQ] = useState(null);
-
-  const toggleFAQ = (index) => {
-    setOpenFAQ(openFAQ === index ? null : index); // Toggle FAQ on click
-  };
+  
   return (
     <>
       {/* Header Section */}
@@ -557,215 +553,142 @@ export default function Home() {
 
       {/* pricing-plans */}
       <div className="main-container">
-        <section class="pricing-plans">
-          <div class="pricing-card basic">
-            <div class="heading">
+        <section className="pricing-plans">
+          <div className="pricing-card basic">
+            <div className="heading">
               <h4>BASIC</h4>
               <p>For startups and small businesses</p>
             </div>
-            <p class="price">
+            <p className="price">
               ₹5,000
               <sub>/month</sub>
             </p>
-            <ul class="features">
+            <ul className="features">
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>Responsive Website</strong> (up to 5 pages)
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>Basic SEO</strong> setup
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>Monthly Reports</strong>
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>Email</strong> support
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>2 Years Maintenance</strong> free
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>Free Small Changes</strong>
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>Additional Features</strong> (small charges may apply)
               </li>
             </ul>
             <Link href="/ContactUs">
-              <button class="contact_b">Contact Us</button>
+              <button className="contact_b">Contact Us</button>
             </Link>
           </div>
 
-          <div class="pricing-card standard">
-            <div class="heading">
+          <div className="pricing-card standard">
+            <div className="heading">
               <h4>STANDARD</h4>
               <p>For growing businesses</p>
             </div>
-            <p class="price">
+            <p className="price">
               ₹15,000
               <sub>/month</sub>
             </p>
-            <ul class="features">
+            <ul className="features">
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>Dynamic Website</strong> (up to 15 pages)
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>Advanced SEO</strong> & analytics
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>Weekly Reports</strong>
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>Priority</strong> support
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>2 Years Maintenance</strong> free
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>Free Small Changes</strong>
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>Additional Features</strong> (small charges may apply)
               </li>
             </ul>
             <Link href="/ContactUs">
-              <button class="contact_b">Contact Us</button>
+              <button className="contact_b">Contact Us</button>
             </Link>
           </div>
 
-          <div class="pricing-card premium">
-            <div class="heading">
+          <div className="pricing-card premium">
+            <div className="heading">
               <h4>PREMIUM</h4>
               <p>For enterprises and large businesses</p>
             </div>
-            <p class="price">
+            <p className="price">
               ₹30,000
               <sub>/month</sub>
             </p>
-            <ul class="features">
+            <ul className="features">
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>Custom Web Application</strong> development
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>Full Stack</strong> solutions
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>24/7</strong> priority support
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>Comprehensive Security</strong> solutions
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>2 Years Maintenance</strong> free
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>Free Small Changes</strong>
               </li>
               <li>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <strong>Additional Features</strong> (small charges may apply)
               </li>
             </ul>
             <Link href="/ContactUs">
-              <button class="contact_b">Contact Us</button>
+              <button className="contact_b">Contact Us</button>
             </Link>
           </div>
         </section>
       </div>
 {/* FAQ  */}
-<section className="faq_container">
-      <h2 className="faq_heading">Frequently Asked Questions</h2>
-      <div className="faq_list">
-        <div className="faq_item">
-          <h3 className="faq_question" onClick={() => toggleFAQ(0)}>
-            What is included in the free maintenance?
-            <span className={`faq_icon ${openFAQ === 0 ? "open" : ""}`}>
-              {openFAQ === 0 ? <FaChevronUp /> : <FaChevronDown />}
-            </span>
-          </h3>
-          {openFAQ === 0 && (
-            <p className="faq_answer">
-              Free maintenance includes fixing bugs, ensuring website uptime, and making minor content updates as per your request.
-            </p>
-          )}
-        </div>
-
-        <div className="faq_item">
-          <h3 className="faq_question" onClick={() => toggleFAQ(1)}>
-            Are there any hidden charges?
-            <span className={`faq_icon ${openFAQ === 1 ? "open" : ""}`}>
-              {openFAQ === 1 ? <FaChevronUp /> : <FaChevronDown />}
-            </span>
-          </h3>
-          {openFAQ === 1 && (
-            <p className="faq_answer">
-              No hidden charges. However, additional features or significant changes outside the agreed scope may incur minimal charges.
-            </p>
-          )}
-        </div>
-
-        <div className="faq_item">
-          <h3 className="faq_question" onClick={() => toggleFAQ(2)}>
-            Can I upgrade my plan later?
-            <span className={`faq_icon ${openFAQ === 2 ? "open" : ""}`}>
-              {openFAQ === 2 ? <FaChevronUp /> : <FaChevronDown />}
-            </span>
-          </h3>
-          {openFAQ === 2 && (
-            <p className="faq_answer">
-              Yes, you can upgrade your plan anytime. Simply contact our support team, and we'll assist you with the process.
-            </p>
-          )}
-        </div>
-
-        <div className="faq_item">
-          <h3 className="faq_question" onClick={() => toggleFAQ(3)}>
-            What happens after the 2 years of free maintenance?
-            <span className={`faq_icon ${openFAQ === 3 ? "open" : ""}`}>
-              {openFAQ === 3 ? <FaChevronUp /> : <FaChevronDown />}
-            </span>
-          </h3>
-          {openFAQ === 3 && (
-            <p className="faq_answer">
-              After the 2-year free maintenance period, you can choose to extend the maintenance service for an affordable fee.
-            </p>
-          )}
-        </div>
-
-        <div className="faq_item">
-          <h3 className="faq_question" onClick={() => toggleFAQ(4)}>
-            How do I request changes to my website?
-            <span className={`faq_icon ${openFAQ === 4 ? "open" : ""}`}>
-              {openFAQ === 4 ? <FaChevronUp /> : <FaChevronDown />}
-            </span>
-          </h3>
-          {openFAQ === 4 && (
-            <p className="faq_answer">
-              You can request changes via email or our support portal. For small updates, it’s completely free as per our policy.
-            </p>
-          )}
-        </div>
-      </div>
-    </section>
+<FAQ />
 
 
     </>

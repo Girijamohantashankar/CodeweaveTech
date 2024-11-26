@@ -33,9 +33,9 @@ function Header() {
                 </div>
                 <nav className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
                     <Link href="/">Home</Link>
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#contact">Contact</a>
+                    <Link href="/About">About</Link>
+                    <Link href="/Services">Services</Link>
+                    <Link href="/ContactUs">Contact</Link>
                 </nav>
             </div>
         </header>

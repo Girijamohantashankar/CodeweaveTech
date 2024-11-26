@@ -95,8 +95,9 @@
     transition: transform 0.3s ease;
   }
   
-  .social-icons a:hover img {
+  .social-icons a:hover Svg {
     transform: scale(1.1);
+    color: #00bcd4;
   }
   
   /* Footer Bottom Section */
@@ -108,11 +109,16 @@
     border-top: 1px solid #444;
     padding-top: 1rem;
   }
-  
+  .social-icons svg{
+    font-size: 30px;
+    color: #fff;
+  }
   /* Responsive Design */
   @media (max-width: 768px) {
     .footer-container {
-      grid-template-columns: 1fr 1fr;
+      /* grid-template-columns: 1fr 1fr; */
+      display: flex;
+      flex-direction: column;
     }
   
     .footer-about,
@@ -126,4 +132,6 @@
       margin-top: 1.5rem;
     }
   }
-  
+  .footer-contact p{
+    padding-top: 10px;
+  }

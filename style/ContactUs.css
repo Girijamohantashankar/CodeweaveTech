@@ -41,6 +41,7 @@
     padding: 20px;
     color: #333;
     animation: fadeInUp 1.5s ease-out;
+    position: relative;
 }
 
 .form-group {
@@ -246,4 +247,9 @@
     .animation-text {
         font-size: 0.9rem;
     }
+}
+.form-status{
+    position: absolute;
+    left: 35%;
+    margin-top: -71px;
 }
