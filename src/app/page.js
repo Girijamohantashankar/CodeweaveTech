@@ -127,9 +127,9 @@ export default function Home() {
                 <strong>Vision:</strong> To be a global leader in IT,
                 revolutionizing businesses with future-ready solutions.
               </p>
-              <a href="#contact" className="btn">
+              <Link href="/ContactUs" className="btn">
                 Contact Us
-              </a>
+              </Link>
             </div>
             <div className="about-image">
               <img src="assets/image2.jpg" alt="About Us" />

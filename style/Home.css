@@ -817,6 +817,9 @@
   }.container_tech{
     padding: 0 15px;
   }
+  .main-container{
+    padding-bottom: 20px;
+  }
 }
 .pricing-card.basic {
   border-color: #0891b2;
